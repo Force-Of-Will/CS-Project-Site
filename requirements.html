@@ -41,7 +41,7 @@ pre{
             A character endowed or born with some sort of magical powers.
 
     1.4 References
-    Any external references needed to understand your project documents. Use URL links if possible.
+    <a href="https://files.minecraftforge.net">Forge</a> 
 
 </pre>
 <h2>
@@ -67,7 +67,8 @@ pre{
     and for the user to be able to install Forge on their own or with help.
 
     2.5 Constraints
-    Describe any constraints on your system.
+    Our system must work with existing game mechanics in Minecraft. It should also be balanced
+    so that none of the classes are too overpowered.
 
     2.6 Assumptions and Dependencies
     Our system assumes the user has Minecraft: Java and Forge installed. This whole project
@@ -87,19 +88,29 @@ pre{
 </h2>
 <pre> 
     4.1 External Interface Requirements (User,Hardware,Software,Communications)
-    Describe what kinds of interfaces your product has, and what they do. Then list specific requirements using item numbers as NF.4.1.X.
+    We will have one interface to allow the players to select their class.
+    NF.4.1.1 Class Picking User Interface: This interface will appear the first time a player
+    enters a world and will allow them to select their class.
 
     4.2 Performance Requirements
-    Describe your product's performance needs. Then list specific requirements using item numbers as NF.4.2.X.
+    This mod should not add noticeable lag to the operation of Minecraft.
+    NF.4.2.1 Lag Time: Depending on the computer Minecraft can already have some lag but this mod
+    should not add to that lag time.
 
     4.3 Design Constraints
-    Describe external requirements that will constrain your design choices. Then list specific requirements using item numbers as NF.4.3.X.
+    The system will work with current Minecraft gameplay.
+    NF.4.3.1 Crafting Items: Any added items will be craftable with the built in crafting mechanisms.
+    NF.4.3.2 Effects: Any buffs will resemble existing effects in the game.
+    NF.4.3.3 Interface: The interface will resemble the style of existing interfaces.
+    NF.4.3.4 New Items: Any new items added will resemble the style of existing items.
 
     4.4 Quality Requirements
-    What quality expectations do your users have? Is your system life-critical? Describe such issues, then list specific requirements using item numbers as NF.4.4.X.
+    Users expect the system to not interfere with the current quality of gameplay.
+    NF.4.4.1 Compatibility: Any added buffs and items should not interfere with the expected
+    function of the game.
 
     4.5 Other Requirements
-    Anything else you need to say. Use item numbers NF.4.5.X.
+    There are no other requirements at this time.
 
 </pre>
 <h2>
