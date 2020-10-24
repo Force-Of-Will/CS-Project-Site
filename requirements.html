@@ -9,36 +9,36 @@ pre{
 </h2>
 <pre> 
     1.1 Purpose of Product
-    The purpose of this product is to provide a modified Minecraft environment to players 
-    who want to explore other options to add to their gaming experience. For players who 
-    are specifically interested in tabletop RPG game elements, such as cleric healers,
-    roguelike assassins, and bruiser warriors. Should time provide, we will also be
-    adding a mage class to the mod as well.
+        The purpose of this product is to provide a modified Minecraft environment to players 
+        who want to explore other options to add to their gaming experience. For players who 
+        are specifically interested in tabletop RPG game elements, such as cleric healers,
+        roguelike assassins, and bruiser warriors. Should time provide, we will also be
+        adding a mage class to the mod as well.
 
     1.2 Scope of Product
-    Mod adds tabletop gaming elements to Minecraft. Includes a cleric class, an assassin 
-    class, and a tanky warrior class. This will not include all elements typically 
-    experienced in a tabletop RPG session, and as stated before, the mage class will 
-    only be added should time allow at the end of the semester.
+        Mod adds tabletop gaming elements to Minecraft. Includes a cleric class, an assassin 
+        class, and a tanky warrior class. This will not include all elements typically 
+        experienced in a tabletop RPG session, and as stated before, the mage  
+        class will only be added should time allow at the end of the semester.
 
     1.3 Acronyms, Abbreviations, Definitions
-    Terms that may be useful to know in this project:
-        RPG:
-         Acronym shorthand for 'Roleplay Game'   
-        Mod: 
-            In terms of a game, an add-on or modification to how a game is played, 
-            which can add new challenges, or other gameplay elements.
-        Healer / Cleric: 
-            In an RPG game, a mythical character who can 'heal' her allies by some 
-            sort of magical power, or someone skilled in the healing arts.
-        Fighter / Warrior: 
-            One skilled in the art of fighting, might last slightly longer in fights 
-            than other characters.
-        Roguelike / Assassin: 
-            A character who is extremely skilled in a lot of damage up front, 
-            might last slightly shorter time in combat because of low defenses.
-        Wizard: 
-            A character endowed or born with some sort of magical powers.
+        Terms that may be useful to know in this project:
+            RPG:
+                Acronym shorthand for 'Roleplaying Game'   
+            Mod: 
+                In terms of a game, an add-on or modification to how a game is played, 
+                which can add new challenges, or other gameplay elements.
+            Healer / Cleric: 
+                In an RPG game, a mythical character who can 'heal' her allies by some 
+                sort of magical power, or someone skilled in the healing arts.
+            Fighter / Warrior: 
+                One skilled in the art of fighting, might last slightly longer in fights 
+                than other characters.
+            Roguelike / Assassin: 
+                A character who is extremely skilled in a lot of damage up front, 
+                might last slightly shorter time in combat because of low defenses.
+            Wizard: 
+                A character endowed or born with some sort of magical powers.
 
     1.4 References
         <a href="https://files.minecraftforge.net">Forge</a> 
@@ -50,68 +50,68 @@ pre{
 </h2>
 <pre> 
     2.1 Context of Product
-    Our mod is created in a Java environment created by Forge Development LLC. It uses Gradle
-    technologies to compile all features of the lab together into a single, executable JAR file.
-    This JAR file can then be placed in your 'mods' folder in any Minecraft Forge environment 
-    and will show in game.
+        Our mod is created in a Java environment created by Forge Development LLC. It uses Gradle
+        technologies to compile all features of the lab together into a single, executable JAR file.
+        This JAR file can then be placed in your 'mods' folder in any Minecraft Forge environment 
+        and will show in game.
 
     2.2 Domain Model with Description
-    Display and describe your domain model.
+        Display and describe your domain model.
 
     2.3 Product Functions (General)
-    When compiled together as a JAR file, the mod can then be placed into any Forge environment,
-    then grabbed by the game environment to be used in-game. Once the mod JAR file is placed
-    in an active environment, there is no need to enable or disable it, it is enabled by default.
+        When compiled together as a JAR file, the mod can then be placed into any Forge environment,
+        then grabbed by the game environment to be used in-game. Once the mod JAR file is placed
+        in an active environment, there is no need to enable or disable it, it is enabled by default.
 
     2.4 User Characteristics and Expectations
-    It is expected for the user to have a legitimately-obtained copy of Minecraft: Java Edition
-    and for the user to be able to install Forge on their own or with help.
+        It is expected for the user to have a legitimately-obtained copy of Minecraft: Java Edition
+        and for the user to be able to install Forge on their own or with help.
 
     2.5 Constraints
-    Our system must work with existing game mechanics in Minecraft. It should also be balanced
-    so that none of the classes are too overpowered.
+        Our system must work with existing game mechanics in Minecraft. It should also be balanced
+        so that none of the classes are significantly outperformed.
 
     2.6 Assumptions and Dependencies
-    Our system assumes the user has Minecraft: Java and Forge installed. This whole project
-    revolves around having version 1.15.2-31.2.0 installed. Java is required as well in order
-    to execute and run the mod. System requirements as listed per forge and Mojang guidelines
-    are required as well. 
+        Our system assumes the user has Minecraft: Java and Forge installed. This whole project
+        revolves around having Minecraft version 1.15.2 and Forge version 31.2.0 installed. Java 
+        is required as well in order to execute and run the mod. System requirements as listed 
+        per Forge and Mojang guidelines are required as well. 
 
 </pre>
 <h2>
 3. Functional Requirements
 </h2>
 <h3>
-<p><a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">User Stories</a></p>
+    <p><a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">User Stories</a></p>
 </h3>
 <h2>
 4. System and Non-Functional Requirements
 </h2>
 <pre> 
     4.1 External Interface Requirements (User, Hardware, Software, Communications)
-    We will have one interface to allow the players to select their class.
-        NF.4.1.1 Class Picking User Interface: This interface will appear the first time a player
-        enters a world and will allow them to select their class.
+        We will have one interface to allow the players to select their class.
+            NF.4.1.1 Class Picking User Interface: This interface will appear the first time a player
+            enters a world and will allow them to select their class.
 
     4.2 Performance Requirements
-    This mod should not add noticeable lag to the operation of Minecraft.
-        NF.4.2.1 Lag Time: Depending on the computer Minecraft can already have some lag but this mod
-        should not add to that lag time.
+        This mod should not add noticeable lag to the operation of Minecraft.
+            NF.4.2.1 Lag Time: Depending on the computer Minecraft can already have some lag but this mod
+            should not add to that lag time.
 
     4.3 Design Constraints
-    The system will work with current Minecraft gameplay.
-        NF.4.3.1 Crafting Items: Any added items will be craftable with the built in crafting mechanisms.
-        NF.4.3.2 Effects: Any buffs will resemble existing effects in the game.
-        NF.4.3.3 Interface: The interface will resemble the style of existing interfaces.
-        NF.4.3.4 New Items: Any new items added will resemble the style of existing items.
+        The system will work with current Minecraft gameplay.
+            NF.4.3.1 Crafting Items: Any added items will be craftable with the built in crafting mechanisms.
+            NF.4.3.2 Effects: Any buffs will resemble existing effects in the game.
+            NF.4.3.3 Interface: The interface will resemble the style of existing interfaces.
+            NF.4.3.4 New Items: Any new items added will resemble the style of existing items.
 
     4.4 Quality Requirements
-    Users expect the system to not interfere with the current quality of gameplay.
-        NF.4.4.1 Compatibility: Any added buffs and items should not interfere with the expected
-        function of the game.
+        Users expect the system to not interfere with the current quality of gameplay.
+            NF.4.4.1 Compatibility: Any added buffs and items should not interfere with the expected
+            function of the game.
 
     4.5 Other Requirements
-    There are no other requirements at this time.
+        There are no other requirements at this time.
 
 </pre>
 <h2>
@@ -119,13 +119,13 @@ pre{
 </h2>
 <h3>
 <p>
-<a href="https://files.minecraftforge.net">Forge Website</a> 
-</p>
-<p>
-<a href="https://minecraft.net">Minecraft Website</a> 
-</p>
-<p>
-<a href="https://www.minecraft.net/en-us/eula">Minecraft EULA (Modding is permitted by Mojang TOS)</a>
+    <a href="https://files.minecraftforge.net">Forge Website</a> 
+    </p>
+    <p>
+    <a href="https://minecraft.net">Minecraft Website</a> 
+    </p>
+    <p>
+    <a href="https://www.minecraft.net/en-us/eula">Minecraft EULA (Modding is permitted by Mojang TOS)</a>
 </p>
 <h3>
 
