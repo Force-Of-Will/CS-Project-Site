@@ -6,35 +6,44 @@ pre{
 </style>
 <h2> Story 1 </h2>
 <pre>
-    As a player, I want to have a mana system implemented for caster classes so that it won't be as much as a hassle to use those class abilities.
+    As a player, I want to have a mana system implemented for caster classes so that it won't be as much as a hassle 
+    to use those class abilities.
 
-    Elaboration: I feel it would be a pain to look for the item/items needed to perform the spell effect.
+    Elaboration: I feel it would be a pain to look for the item/items needed to perform the 
+    spell effect.
 
     Constraints: None
 
     Effort Estimation: 1 person-hours
 
-    Acceptance Test: Having the spell effect tied to a key bind and not an item, without allowing it to be spammed indefinitely.
+    Acceptance Test: Having the spell effect tied to a key bind and not an item, 
+    without allowing it to be spammed indefinitely.
 </pre>
 <h2> Story 2 </h2>
 <pre>
-    As a player, I want to have more armor enchantments and damage types so that there can be a bit more strategy when it comes to dealing with mobs.
+    As a player, I want to have more armor enchantments and damage types so that there can 
+    be a bit more strategy when it comes to dealing with mobs.
 
-    Elaboration: Certain mobs should deal something different from default damage (i.e. spiders should do poison damage and wither skeletons should do necrotic damage). To combat this, different armor enchantments could be added to gain resistance to these damage types. You could add stuff like a "thorns" effect to armor as well.
+    Elaboration: Certain mobs should deal something different from default damage (i.e. spiders should do poison damage 
+    and wither skeletons should do necrotic damage). To combat this, different armor enchantments could be added to gain 
+    resistance to these damage types. You could add stuff like a "thorns" effect to armor as well.
 
     Constraints: none
 
     Effort Estimation: 10 person-hours
 
-    Acceptance Test: Spiders do poison damage and poison resistance will reduce this damage and/or wither skeletons will do necrotic damage and necrotic resistance will reduce this damage.
+    Acceptance Test: Spiders do poison damage and poison resistance will reduce this damage and/or wither skeletons 
+    will do necrotic damage and necrotic resistance will reduce this damage.
 </pre>
 <h2> Story 3 </h2>
 <pre>
     As a third-party server owner, I want to be able to use this mod on a multiplayer server.
     
-    Elaboration: Classes are independent to-player, each player can go on their own path in the game. Mod works and is executable on multiplayer servers.
+    Elaboration: Classes are independent to-player, each player can go on their own path in the game. 
+    Mod works and is executable on multiplayer servers.
     
-    Constraints: Independant data storage, or metadata per-player. (Serverside handling is done by forge itself.)
+    Constraints: Independant data storage, or metadata per-player. 
+    (Serverside handling is done by forge itself.)
     
     Effort Estimation: 30 minutes -> 2 person-hours.
     
@@ -54,7 +63,8 @@ pre{
 
     Effort Estimation: 5 person-hours
 
-    Acceptance Test: Mod contains a playable fighter class that has buffs and equipment which help fighting ability.
+    Acceptance Test: Mod contains a playable fighter class that has buffs and equipment 
+    which help fighting ability.
 </pre>
 <h3> Story 4.2 </h3>
 <pre>
@@ -66,7 +76,8 @@ pre{
 
     Effort Estimation: 5 person-hours
 
-    Acceptance Test: Mod contains a playable rogue class that has buffs and equipment which help with sneaking and rougelike activites.
+    Acceptance Test: Mod contains a playable rogue class that has buffs and equipment 
+    which help with sneaking and rougelike activites.
 </pre>
 <h3> Story 4.3 </h3>
 <pre>
@@ -78,7 +89,8 @@ pre{
 
     Effort Estimation: 5 person-hours
 
-    Acceptance Test: Mod contains a playable cleric class that has buffs and equipment which allow the player to heal themselves and others.
+    Acceptance Test: Mod contains a playable cleric class that has buffs and equipment 
+    which allow the player to heal themselves and others.
 </pre>
 <h3> Story 4.4 </h3>
 <pre>
@@ -90,13 +102,15 @@ pre{
 
     Effort Estimation: 5 person-hours
 
-    Acceptance Test: Mod contains a playable magic class that has buffs and equipment which allow them to do magic.
+    Acceptance Test: Mod contains a playable magic class that has buffs and equipment 
+    which allow them to do magic.
 </pre>
 <h2> Story 5 </h2>
 <pre>
     As a player, I want to be able to pick my class with a GUI.
     
-    Elaboration: The mod should have a GUI that's accessible either by hotkey or automatically when spawning that allows players to select the class that they want to play as.
+    Elaboration: The mod should have a GUI that's accessible either by hotkey or automatically 
+    when spawning that allows players to select the class that they want to play as.
     
     Constraints: None
     
@@ -108,11 +122,66 @@ pre{
 <pre>
     As a player, I want to be able to get more powerful as I play.
     
-    Elaboration: The mod should allow players to get more powerful in some way as they play with this mod. This could be with gaining new abilities or more health.
+    Elaboration: The mod should allow players to get more powerful in some way as they play 
+    with this mod. This could be with gaining new abilities or more health.
     
     Constraints: None
     
     Effort Estimation: 5 person-hours + 2-5 person-hours per class
     
     Acceptance Test: Players can gain new abilities and features the longer they play with the mod installed.
+</pre>
+<h2> Story 7 </h2>
+<pre>
+    As a low end computer user and consumer, I do not want this mod to significantly impact my computer while I play.
+    
+    Elaboration: This mod should not significantly impact performance of the game, nor should it 
+    impact the longevity of the machine it is being used on.
+    
+    Constraints: None
+    
+    Effort Estimation: 5 person-hours.
+    
+    Acceptance Test: While the game is being played with the mod installed, users will not see or feel 
+    a noticable difference, the game will operate within + or - 3-5% of Vanilla, unmodded Minecraft by computer metrics.
+</pre>
+<h2> Story 8 </h2>
+<pre>
+    As a third-party mod creator, I do not want this mod to impact or overlap with elements my mod might have.
+    
+    Elaboration: This mod should not interfere with other mods and their content, this mod should not rely on 
+    any other mod to be run in the Forge Environment.
+    
+    Constraints: None
+    
+    Effort Estimation: 5->10 Person-Hours
+    
+    Acceptance Test: Mod will not rely on, read from, or draw any information directly form any other mod or their data.
+</pre>
+<h2> Story 9 </h2>
+<pre>
+    As a Server Owner, I want to have minimum launch times for debugging issues and server launch.
+    
+    Elaboration: Similar to launching in a game environment in minimal time/ taking minimal hardware focus,
+    server launch and debug time should also be minimal.
+    
+    Constraints: None
+    
+    Effort Estimation: 5 person-hours.
+    
+    Acceptance Test: This mod should not significantly impact performance of the game or server, nor should it 
+    impact the longevity of the machine it is being executed on.
+</pre>
+<h2> Story 10 </h2>
+<pre>
+    As someone who always wants to play the most up-to-date version of minecraft, I want to be able to
+    use this mod whenever I upgrade.
+    
+    Elaboration: The mod should be possibly portable to multiple Forge Versions.
+    
+    Constraints: Whether or not Forge continues to support different elements of our mod. 
+    
+    Effort Estimation: 2 person-hours.
+    
+    Acceptance Test: Mod ports to multiple Forge versions successfully. 
 </pre>
