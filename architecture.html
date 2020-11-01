@@ -1,1 +1,59 @@
-<h1> Architecture </h1>
+<style>
+pre{
+    font-size: 15px;
+}
+</style>
+<h1>
+Architecture
+</h1>
+<h2>
+Overview
+</h2>
+<pre>
+    The Wizards of the Nether's project is to create a Minecraft Mod with several components:
+    The overall idea of the mod is to add tabletop role-playing-game elements to the game, Minecraft.
+    In order to do this, we are using a pre-built modification library called Forge (minecraftforge.net).
+    Forge allows for people to make minecraft mods as far as their documentation will permit.
+</pre>
+<h2>
+Key Architectural Drivers
+</h2>
+<pre>
+    Requirements for our system:
+        Our system relies on being able to access Forge libraries, and relies 
+        on having both Forge and Minecraft installed in order to test or use our product. 
+        
+        Both Minecraft and Forge natively use a client / server architecture in publishing their products.  
+</pre>
+<h2>
+Architectural Style Choices
+</h2>
+<pre>
+    P2P (Peer to Peer)
+        For a single player world in Minecraft™, a server is made on the client computer, and 
+        technically makes it a P2P connection
+        Reason it was considered:
+            We thought that this would be the closest architecture that wasn’t Client-Server.
+            
+    Client-Server
+        A server is always setup in Minecraft™, and the player(s) acts as the client(s) accessing the server.
+        Reason why we chose this architecture
+        Both Forge and Minecraft™ is natively setup to run with this architecture
+</pre>
+<h2>
+Architecture Diagram
+</h2>
+<pre>
+<a href="https://jaymay284.github.io/CS-Project-Site/ArchitectureDiagram.png">Architecture Diagram</a>
+</pre>
+<h2>
+Conclusion
+</h2>
+<pre>
+    In conclusion, we chose a client-server architecture for our program because it is so similar 
+    and parallel to what Minecraft and Forge already use. 
+
+    Risk: When Forge updates, it will likely also throw a wrench in our development as well. 
+    We would have to decide to either update our source code to keep up, or put a 
+    disclaimer telling users which exact version of Forge to use.
+</pre>
