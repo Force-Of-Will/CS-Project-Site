@@ -1,1 +1,59 @@
+<style>
+pre{
+    font-size: 15px;
+}
+</style>
 <h1> Design </h1>
+<pre>
+    Our project uses the Forge framework, which allows modifications to be added to Minecraft
+through the use of class files representing mod elements to the game environment.
+<h2>
+Architecture Diagram
+</h2>
+    Our architexture diagram shows that the Minecraft server works in tandem with the forge server/
+client which can be interfaced to users. The forge client then is the "final" product that is then 
+displayed to the user(s) in a modded Minecraft environment.
+<a href="https://jaymay284.github.io/CS-Project-Site/ArchitectureDiagram.png">Architecture Diagram</a>
+
+<h2>
+Class-Level Design
+</h2>
+    Each mod "element" has its own java class file and some even have 2 files to "bus" multiple 
+elements into the mod environment all at once. For the most part, though, all mod elements have 
+separate class files and are all tied together in two class files that actually put all the
+mod elements in one place.
+
+    Our two main class files that tie every element together are our "Mod" and "Mod Elements"
+files. 
+Mod:
+    Controls data values used in the mod. This can be anything from global "mod-id" element
+to version values. This file also kind of "wraps up" all the finished elements and 
+keeps them all in once place.
+
+Mod Elements:
+    This file wraps together each element that references it. Each "bus" delivers different
+types of elements. Biomes, items, GUIs, Enchantments, etc. 
+
+<h2>
+Control-Issues
+</h2>
+    The good thing about our system's design is that all elements are pretty much independent 
+from one-another. If one element is buggy, then we know exactly where to look in our code.
+There are no external-influences that would directly change our code other than us actually
+going in and changing it for ourselves. 
+
+    All elements are very separate form one another. For example, the daggers show no presence 
+in the GUI / screen file, the execute mechanic will not show up in the GUI file. If one element
+shows signs of issues, we pretty much know exactly where to look in order to go and fix the issue.
+</pre>
+<h3>
+<p>
+    <a href="https://files.minecraftforge.net">Forge Website</a> 
+    </p>
+    <p>
+    <a href="https://minecraft.net">Minecraft Website</a> 
+    </p>
+    <p>
+    <a href="https://www.minecraft.net/en-us/eula">Minecraft EULA (Modding is permitted by Mojang TOS)</a>
+</p>
+<h3>
