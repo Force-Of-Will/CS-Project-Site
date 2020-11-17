@@ -25,12 +25,23 @@ mod elements in one place.
 
     Our two main class files that tie every element together are our "Mod" and "Mod Elements"
 files. 
+
+    For example, each Dagger class, (DiamondDagger, GoldDagger, IronDagger, etc.) are all 
+wrapped up in the ModElements class, which upon being grabbed by the Gradle instructions, 
+is then put into a JAR file that can be used in conjunction with forge. When this is added
+to the Forge Environment, it can be used in-game. 
+
+    Another example can be out GUI class, which is grabbed by the forge ModElements
+file, packaged into an item and instructions and then is able to display in-game.
+<h3>
 Mod:
+</h3>
     Controls data values used in the mod. This can be anything from global "mod-id" element
 to version values. This file also kind of "wraps up" all the finished elements and 
 keeps them all in once place.
-
+<h3>
 Mod Elements:
+</h3>
     This file wraps together each element that references it. Each "bus" delivers different
 types of elements. Biomes, items, GUIs, Enchantments, etc. 
 
