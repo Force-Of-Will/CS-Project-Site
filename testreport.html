@@ -1,1 +1,123 @@
 <h1> Test Report </h1>
+<style>
+pre{
+    font-size: 15px;
+}
+</style>
+<h2> 1. Component Testing </h2>
+<pre>
+    Our project thus far has major components, and while testing them separately is not
+    necessarily easier than just testing the whole system, there are ways to tell if
+    our code will compile.
+    
+    In eclipse, because we have imported the whole entire minecraft environment and the
+    forge environment, the compiler will warn if any of our code is blatantly incorrect. 
+    
+    The nice thing about the environment we have is that if one thing is not working it
+    will not directly effect wether or not other elements of our system will work.
+    
+    For example, thus far we have daggers and a class selection item. We were able to
+    test them separately, but it took so much longer than necessary considering the two 
+    components do not interact at all. 
+    
+    The only interaction between components thus far is between the daggers and 
+    the backstab procedure, but if the backstab procedure were completely removed, 
+    the daggers would still work, just not the backstab procedure attached to them.
+    
+    The biggest unit testing tool available to us was the premade gradle build option.
+    With this option, we are able to put our whole project into a JAR file and then 
+    put said file into the forge Minecraft environment for testing.
+    
+    We preform component testing extremely routinely in the development of our project. 
+    The moment a file exists within the testing space of our project it can be tested
+    using the premade gradle executions.
+</pre>
+<h2> 2. System Testing </h2>
+<pre>
+    Our system testing method is similar to our unit testing tool. The Gradle executions
+    that were premade for our project are able to provide feedback should it exist.
+    
+    Using gradle, we are able to export our whole system, components and all into a 
+    single JAR file, which can then be placed in our Minecraft Forge environment and 
+    tested by the user.
+    
+    The biggest and most useful system testing tool comes as no suprise, with gradle 
+    being able to make our JAR files and launchable using the Forge environment, it 
+    is such a wonderful testing tool.
+    
+    We preform System Testing very routinely in our project, mostly because system
+    testing is one of the few ways we are able to make sure our code works-- by
+    actually messing around with our components and their interactions. 
+</pre>
+<h2> 3. Acceptance Testing </h2>
+<pre>
+    In driving our acceptance of components, we used our Acceptance Test Criteria in
+    our User Stories to determine wether or not to accept each component. 
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">User Stories</a></p>
+    
+    While not all User Stories will be met with completion, it was mostly a battle 
+    of prioritization in finishing some of the most keystone components and ideas of
+    our mod, such as a class selection, and perks for each class.
+    
+    Story 1, Acceptance: NOT ACCEPTED
+    Reason: Due to prioritization, we put mana and spell casting on hold in case there
+    was extra time towards the end of the semester.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 1</a></p>
+    Story 2, Acceptance: NOT ACCEPTED
+    Reason: Armor enchantments have not been added as of yet.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 2</a></p>
+    Story 3, Acceptance: PASS
+    Reason: Forge mod JAR file works on a multiplayer server provided by forge.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 3</a></p>
+    Story 4, Acceptance: PASS
+    Reason: User is able to select a class that might cater to their individual playstyle.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 4</a></p>
+    Story 5, Acceptance: PASS
+    Reason: Player is able to select their class with a GUI / item provided to them upon
+    first loading into game.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 5</a></p>
+    Story 6, Acceptance: PARTIAL ACCEPTANCE
+    Reason: Player scaling is a typical part of minecraft, our mod simply adds 
+    on to that experience.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 6</a></p>
+    Story 7, Acceptance: PASS
+    Reason: Computer performance is not effected compared to original minecraft in any way,
+    shape, or form. Performance is impacted by mod within +-5% performance.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 7</a></p>
+    Story 8, Acceptance: MAJORITY PASS
+    Reason: While the mod is different from other ideas and mods that already exist, it is
+    pretty much impossible to deal with the endless possibilities of mods that might already
+    exist, or will exist in the future, our mod aims at using standalone components, making
+    crossover with other mods significantly unlikely.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 8</a></p>
+    Story 9, Acceptance: PARTIAL PASS
+    Reason: We have not yet worked on this yet, but it currently works due to there being
+    zero conflict whatsoever. Server performance, startup, and machine longevity is 
+    uneffected.
+    
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 9</a></p>
+    Story 10, Acceptance: PASS
+    Reason: While forge continues to support current outlining and documentation / library
+    support, this mod will continue to work in later forge versions.
+    <a href="https://jaymay284.github.io/CS-Project-Site/userstories.html">Story 10</a></p>
+</pre>
+<h3>
+<p>
+    <a href="https://files.minecraftforge.net">Forge Website</a> 
+    </p>
+    <p>
+    <a href="https://minecraft.net">Minecraft Website</a> 
+    </p>
+    <p>
+    <a href="https://www.minecraft.net/en-us/eula">Minecraft EULA (Modding is permitted by Mojang TOS)</a>
+</p>
+<h3>
